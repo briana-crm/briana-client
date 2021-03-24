@@ -33,8 +33,8 @@ jobs:
         uses: peter-evans/repository-dispatch@v1.1.3
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
-          repository: ${{ env.DISPATCH_REPO }}
-          event-type: ${{ env.UPDATE_EVENT_TYPE }}
+          repository: $DISPATCH_REPO
+          event-type: $UPDATE_EVENT_TYPE
           client-payload: '{"service_name": "$SERVICE_NAME", "image_name": "$IMAGE_NAME" }'
         env:
           DISPATCH_REPO: "briana-crm/briana-deploy"
