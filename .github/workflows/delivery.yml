@@ -34,7 +34,7 @@ jobs:
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: ${{ env.DISPATCH_REPO }}
-          event-type: $UPDATE_EVENT_TYPE
+          event-type: ${{ env.UPDATE_EVENT_TYPE }}
           client-payload: '{"service_name": "${{ env.SERVICE_NAME }}", "image_name": "${{ env.IMAGE_NAME }}"}'
         env:
           DISPATCH_REPO: "briana-crm/briana-deploy"
