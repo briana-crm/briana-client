@@ -1,7 +1,7 @@
 name: delivery
 env:
-  DH_REPO_NAME: "${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.client_payload.repo_name }}"
-  IMAGE_TAG: "${{ github.event.client_payload.commit_hash }}"
+  DH_REPO_NAME: "${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}"
+  IMAGE_TAG: "${{ github.sha }}"
 
 on:
   push:
