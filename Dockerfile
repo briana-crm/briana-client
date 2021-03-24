@@ -6,6 +6,6 @@ RUN rm -rf /usr/share/nginx/html/*
 
 COPY ./dist/briana-client /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 9999
 
 CMD ["nginx", "-g", "daemon off;"]
