@@ -63,6 +63,7 @@ import {PositionCreationComponent} from './employees-page/position-creation/posi
 import {EmployeeCreationComponent} from './employees-page/employee-creation/employee-creation.component';
 import {CreationHandlerComponent} from './shared/component/creation-handler/creation-handler.component';
 import {TotalPricePipe} from './shared/pipe/total-price/total-price.pipe';
+import { BasePageComponent } from './base-page/base-page.component';
 
 @NgModule({
   declarations: [
@@ -123,7 +124,8 @@ import {TotalPricePipe} from './shared/pipe/total-price/total-price.pipe';
     PositionCreationComponent,
     EmployeeCreationComponent,
     CreationHandlerComponent,
-    TotalPricePipe
+    TotalPricePipe,
+    BasePageComponent
   ],
   imports: [
     BrowserModule,
