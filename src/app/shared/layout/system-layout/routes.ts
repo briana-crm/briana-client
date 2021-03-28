@@ -4,7 +4,7 @@ import {AuthGuard} from '../../guard/auth.guard';
 import {Route, Routes} from '@angular/router';
 import {SYSTEM_ROUTES} from './system.routes';
 import {AUTH_ROUTES} from '../auth-layout/auth.routes';
-import {BasePageComponent} from "../../../base-page/base-page.component";
+import {BasePageComponent} from '../../../base-page/base-page.component';
 
 export declare type AppRoutes = AppRoute[];
 
